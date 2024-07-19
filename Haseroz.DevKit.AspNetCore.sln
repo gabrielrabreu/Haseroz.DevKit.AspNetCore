@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{101C84CA-2FFF-4C06-A85C-DCB7CD883652}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{9A1599DE-C1A3-4708-953D-EA511406B1DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{D3000A67-862C-4695-9CBE-0166311B9FB6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Haseroz.DevKit.AspNetCore", "src\Haseroz.DevKit.AspNetCore\Haseroz.DevKit.AspNetCore.csproj", "{D3DA0380-7150-435E-A3AB-EC3A00985E56}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Haseroz.DevKit.AspNetCore.SampleMinimalApi", "samples\Haseroz.DevKit.AspNetCore.SampleMinimalApi\Haseroz.DevKit.AspNetCore.SampleMinimalApi.csproj", "{1B400766-9D50-4B14-82AA-3922E63FB6A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Haseroz.DevKit.AspNetCore.UnitTests", "tests\Haseroz.DevKit.AspNetCore.UnitTests\Haseroz.DevKit.AspNetCore.UnitTests.csproj", "{95808BAB-CB65-440A-89F2-4365068F0604}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Haseroz.DevKit.AspNetCore.SampleMinimalApi.FunctionalTests", "tests\Haseroz.DevKit.AspNetCore.SampleMinimalApi.FunctionalTests\Haseroz.DevKit.AspNetCore.SampleMinimalApi.FunctionalTests.csproj", "{CBD9851A-5019-4C7A-BD50-FD148AC10FD0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3DA0380-7150-435E-A3AB-EC3A00985E56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3DA0380-7150-435E-A3AB-EC3A00985E56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3DA0380-7150-435E-A3AB-EC3A00985E56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3DA0380-7150-435E-A3AB-EC3A00985E56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B400766-9D50-4B14-82AA-3922E63FB6A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B400766-9D50-4B14-82AA-3922E63FB6A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B400766-9D50-4B14-82AA-3922E63FB6A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B400766-9D50-4B14-82AA-3922E63FB6A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95808BAB-CB65-440A-89F2-4365068F0604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95808BAB-CB65-440A-89F2-4365068F0604}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95808BAB-CB65-440A-89F2-4365068F0604}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95808BAB-CB65-440A-89F2-4365068F0604}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBD9851A-5019-4C7A-BD50-FD148AC10FD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBD9851A-5019-4C7A-BD50-FD148AC10FD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBD9851A-5019-4C7A-BD50-FD148AC10FD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBD9851A-5019-4C7A-BD50-FD148AC10FD0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D3DA0380-7150-435E-A3AB-EC3A00985E56} = {101C84CA-2FFF-4C06-A85C-DCB7CD883652}
+		{1B400766-9D50-4B14-82AA-3922E63FB6A5} = {D3000A67-862C-4695-9CBE-0166311B9FB6}
+		{95808BAB-CB65-440A-89F2-4365068F0604} = {9A1599DE-C1A3-4708-953D-EA511406B1DF}
+		{CBD9851A-5019-4C7A-BD50-FD148AC10FD0} = {9A1599DE-C1A3-4708-953D-EA511406B1DF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9AA632AD-DD5D-4991-9941-966476B6D70D}
+	EndGlobalSection
+EndGlobal
