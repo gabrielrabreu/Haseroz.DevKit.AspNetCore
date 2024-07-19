@@ -1,4 +1,5 @@
 ﻿using Ardalis.Result;
+using Ardalis.Result.FluentValidation;
 using Haseroz.DevKit.AspNetCore.SampleMinimalApi.Models;
 using Haseroz.DevKit.AspNetCore.SampleMinimalApi.Validators;
 
