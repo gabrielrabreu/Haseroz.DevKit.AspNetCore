@@ -34,5 +34,5 @@ jobs:
         VERSION: ${{ steps.get_version.outputs.VERSION }}
       run: |
         rm -rf ./nupkg/
-        dotnet pack --no-build --configuration Release /p:Version=${{ env.VERSION }} --output ./nupkg
+        dotnet pack ./src/Haseroz.DevKit.AspNetCore/Haseroz.DevKit.AspNetCore.csproj --no-build --configuration Release /p:Version=${{ env.VERSION }} --output ./nupkg
         dotnet nuget push ./nupkg/*.nupkg -k $NUGET_API_KEY -s https://api.nuget.org/v3/index.json
