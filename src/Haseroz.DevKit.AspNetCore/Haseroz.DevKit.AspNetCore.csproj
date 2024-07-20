@@ -7,6 +7,24 @@
     <SonarQubeTestProject>false</SonarQubeTestProject>
   </PropertyGroup>
 
+  <PropertyGroup Label="Package info">
+    <PackageDescription>Extension of Haseroz.DevKit for ASP.NET Core, providing a versatile library with foundational utilities for common development tasks in ASP.NET Core.</PackageDescription>
+    <Authors>Gabriel Abreu (@gabrielrabreu)</Authors>
+    <PackageProjectUrl>https://github.com/gabrielrabreu/Haseroz.DevKit.AspNetCore</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/gabrielrabreu/Haseroz.DevKit.AspNetCore</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageIcon>HaserozDevKit.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <Version>$(Version)</Version>
+  </PropertyGroup>
+	
+  <ItemGroup Label="Package files">
+    <None Include="..\..\docs\assets\HaserozDevKit.png" Visible="false" Pack="true" PackagePath="/" />
+    <None Include="..\..\README.md" Visible="false" Pack="true" PackagePath="/" />
+    <None Include="..\..\LICENSE" Visible="false" Pack="true" PackagePath="/" />
+  </ItemGroup>
+
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
