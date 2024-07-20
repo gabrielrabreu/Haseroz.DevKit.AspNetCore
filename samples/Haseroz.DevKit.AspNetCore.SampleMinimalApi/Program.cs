@@ -1,5 +1,7 @@
+using Haseroz.DevKit.MinimalApis;
 using Serilog;
 using Serilog.Extensions.Logging;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,5 +26,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.RegisterEndpoints(Assembly.GetExecutingAssembly());
 
 await app.RunAsync();
