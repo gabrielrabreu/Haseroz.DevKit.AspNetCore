@@ -1,18 +1,24 @@
 ﻿using Haseroz.DevKit.AspNetCore;
+using System.Reflection;
 
 namespace Haseroz.DevKit.MinimalApis;
 
-public static partial class MinimalApiEndpointExtensions
+public class MinimalApiEndpointConfiguration
 {
-    public class MinimalApiEndpointConfiguration
+    private readonly List<Type> _types = [];
+
+    public IEnumerable<Type> GetEndpoints() => _types;
+
+    public void FromType<T>() where T : MinimalApiEndpoint
     {
-        private readonly List<Type> _types = [];
+        _types.Add(typeof(T));
+    }
 
-        public void AddEndpoint<T>() where T : MinimalApiEndpoint
-        {
-            _types.Add(typeof(T));
-        }
+    public void FromAssembly(Assembly assembly)
+    {
+        var types = assembly.GetTypes()
+            .Where(t => t.IsSubclassOf(typeof(MinimalApiEndpoint)) && !t.IsAbstract);
 
-        public IEnumerable<Type> GetEndpoints() => _types;
+        _types.AddRange(types);
     }
 }
