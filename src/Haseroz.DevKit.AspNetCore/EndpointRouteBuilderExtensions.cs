@@ -1,8 +1,7 @@
-﻿using Haseroz.DevKit.AspNetCore;
-using Microsoft.AspNetCore.Routing;
+﻿using Microsoft.AspNetCore.Routing;
 using System.Reflection;
 
-namespace Haseroz.DevKit.MinimalApis;
+namespace Haseroz.DevKit.AspNetCore;
 
 public static class EndpointRouteBuilderExtensions
 {

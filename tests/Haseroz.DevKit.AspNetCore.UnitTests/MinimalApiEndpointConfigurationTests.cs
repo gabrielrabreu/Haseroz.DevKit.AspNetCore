@@ -1,6 +1,5 @@
 ﻿using FluentAssertions;
 using Haseroz.DevKit.AspNetCore.UnitTests.TestUtilities.Mocks;
-using Haseroz.DevKit.MinimalApis;
 using System.Reflection;
 
 namespace Haseroz.DevKit.AspNetCore.UnitTests;

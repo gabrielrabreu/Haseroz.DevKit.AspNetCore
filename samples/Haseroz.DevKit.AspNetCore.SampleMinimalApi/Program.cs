@@ -1,4 +1,4 @@
-using Haseroz.DevKit.MinimalApis;
+using Haseroz.DevKit.AspNetCore;
 using Serilog;
 using Serilog.Extensions.Logging;
 using System.Reflection;
