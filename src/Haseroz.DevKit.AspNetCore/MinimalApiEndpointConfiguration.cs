@@ -1,7 +1,6 @@
-﻿using Haseroz.DevKit.AspNetCore;
-using System.Reflection;
+﻿using System.Reflection;
 
-namespace Haseroz.DevKit.MinimalApis;
+namespace Haseroz.DevKit.AspNetCore;
 
 public class MinimalApiEndpointConfiguration
 {

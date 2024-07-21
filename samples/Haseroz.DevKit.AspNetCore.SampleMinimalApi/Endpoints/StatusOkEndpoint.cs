@@ -1,5 +1,4 @@
 ﻿using Ardalis.Result;
-using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace Haseroz.DevKit.AspNetCore.SampleMinimalApi.Endpoints;
 
@@ -10,7 +9,7 @@ public class StatusOkEndpoint : MinimalApiEndpoint
         builder.MapPost("/Status/Ok", Handle)
             .WithOpenApi()
             .WithTags("Status")
-            .Produces<Ok<string>>();
+            .ProducesOk<string>();
     }
 
     private Microsoft.AspNetCore.Http.IResult Handle()

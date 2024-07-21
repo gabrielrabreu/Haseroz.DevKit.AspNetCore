@@ -2,19 +2,19 @@
 
 namespace Haseroz.DevKit.AspNetCore.SampleMinimalApi.Endpoints;
 
-public class StatusCreatedEndpoint : MinimalApiEndpoint
+public class StatusNoContentEndpoint : MinimalApiEndpoint
 {
     public override void Define(IEndpointRouteBuilder builder)
     {
-        builder.MapPost("/Status/Created", Handle)
+        builder.MapPost("/Status/NoContent", Handle)
             .WithOpenApi()
             .WithTags("Status")
-            .ProducesCreated<string>();
+            .ProducesNoContent();
     }
 
     private Microsoft.AspNetCore.Http.IResult Handle()
     {
-        var result = Result<string>.Created("MyValue", "MyLocation");
+        var result = Result.NoContent();
         return result.ToMinimalApiResult();
     }
 }
