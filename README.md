@@ -4,6 +4,8 @@
 ![Sonar Coverage](https://img.shields.io/sonar/coverage/gabrielrabreu_Haseroz.DevKit.AspNetCore?server=https%3A%2F%2Fsonarcloud.io&style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/gabrielrabreu/Haseroz.DevKit.AspNetCore?style=for-the-badge)
 ![GitHub Release](https://img.shields.io/github/v/release/gabrielrabreu/Haseroz.DevKit.AspNetCore?style=for-the-badge)
+![GitHub Pre-release](https://img.shields.io/github/v/release/gabrielrabreu/Haseroz.DevKit.AspNetCore?include_prereleases&style=for-the-badge&label=PRE-RELEASE)
+
 
 ## Overview
 
