@@ -1,5 +1,5 @@
 ﻿using FluentAssertions;
-using Haseroz.TestKit.FluentAssertions.Extensions;
+using Haseroz.TestKit.FluentAssertions;
 using Microsoft.AspNetCore.Mvc.Testing;
 
 namespace Haseroz.DevKit.AspNetCore.SampleMinimalApi.FunctionalTests.Endpoints;
